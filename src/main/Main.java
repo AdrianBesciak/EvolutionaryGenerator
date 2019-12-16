@@ -1,6 +1,5 @@
-package com.company;
 
-import GUI.MyFrame;
+import gui.MainFrame;
 
 import java.awt.EventQueue;
 
@@ -9,7 +8,7 @@ public class Main {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new MyFrame();
+                new MainFrame();
             }
         });
     }
