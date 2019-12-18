@@ -1,5 +1,6 @@
 package map.animal;
 
+import json.StartValues;
 import map.*;
 import map.animal.Genome;
 
@@ -12,6 +13,7 @@ public class Animal implements IMapElement {
     private Vector2d position;
     private IWorldMap map;
     public Genome genome;
+    private static StartValues startValues = new StartValues();
     private int energy;
 
     public Animal()
@@ -25,7 +27,7 @@ public class Animal implements IMapElement {
         this.map = map;
         genome = new Genome();
         this.position = map.getRandomEmptyPosition();
-        this.energy = map.getStartEnergy();
+        this.energy = startValues.getEnergyOnStart();
     }
 
     public Animal(IWorldMap map, Animal father, Animal mother)  //constructor of other animals
