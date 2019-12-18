@@ -11,9 +11,9 @@ public class WorldMap extends MapSpace {
     Map<Vector2d, IMapElement> elements = new LinkedHashMap<>();
     private static final Random random = new Random();
 
-    public WorldMap(int width, int height, int jungleRelation)
+    public WorldMap()
     {
-        super(width, height, jungleRelation);
+        super();
     }
 
     public boolean place(IMapElement elem)

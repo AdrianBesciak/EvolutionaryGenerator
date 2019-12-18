@@ -1,5 +1,7 @@
 package map;
 
+import json.StartValues;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -10,17 +12,18 @@ public class MapSpace {
     protected final Vector2d lowerCorner;
     protected Vector2d jungleHigherCorner;
     protected Vector2d jungleLowerCorner;
+    private static StartValues startValues = new StartValues();
     private static final Random random = new Random();
 
-    public MapSpace(int width, int height, int jungleRelation)
+    public MapSpace()
     {
-        this.width = width;
-        this.height = height;
-        this.higherCorner = new Vector2d(width, height);
+        this.width = startValues.getMapWidth();
+        this.height = startValues.getMapHeight();
+        this.higherCorner = new Vector2d(this.width, this.height);
         this.lowerCorner = new Vector2d(0, 0);
-        if (jungleRelation < 0 || jungleRelation > 100)
-            throw new IllegalArgumentException(jungleRelation + " is not a proper percentage relation of size between Jungle and Map. Use value between 0 and 100");
-        setJungleSize(jungleRelation);
+        if (startValues.getJungleRelationToMap() < 0 || startValues.getJungleRelationToMap() > 100)
+            throw new IllegalArgumentException(startValues.getJungleRelationToMap() + " is not a proper percentage relation of size between Jungle and Map. Use value between 0 and 100");
+        setJungleSize(startValues.getJungleRelationToMap());
     }
 
     private void setJungleSize(int proportion)
