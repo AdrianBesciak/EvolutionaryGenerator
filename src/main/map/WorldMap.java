@@ -1,6 +1,6 @@
 package map;
 
-import map.animal.Animal;
+import map.element.Animal;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

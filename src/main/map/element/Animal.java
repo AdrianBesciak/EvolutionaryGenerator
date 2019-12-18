@@ -1,12 +1,7 @@
-package map.animal;
+package map.element;
 
 import json.StartValues;
 import map.*;
-import map.animal.Genome;
-
-import java.lang.reflect.Array;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Animal implements IMapElement {
     private MapDirection direction;

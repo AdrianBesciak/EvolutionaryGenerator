@@ -1,8 +1,7 @@
-package map.animal;
+package map.element;
 
 import map.MapDirection;
 
-import java.io.Console;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
