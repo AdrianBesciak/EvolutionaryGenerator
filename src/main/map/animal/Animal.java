@@ -69,7 +69,11 @@ public class Animal implements IMapElement {
         }
     }
 
-
+    public void move()
+    {
+        Vector2d positionCandidate = this.position.add(this.genome.getMove().toUnitVector());
+        this.position = map.calculateCorrectPositionOfElement(positionCandidate);
+    }
 
 
 }
