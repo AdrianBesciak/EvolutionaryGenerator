@@ -12,6 +12,7 @@ public class Animal implements IMapElement {
     private Vector2d position;
     private IWorldMap map;
     public Genome genome;
+    private int energy;
 
     public Animal()
     {
@@ -24,6 +25,7 @@ public class Animal implements IMapElement {
         this.map = map;
         genome = new Genome();
         this.position = map.getRandomEmptyPosition();
+        this.energy = map.getStartEnergy();
     }
 
     public Animal(IWorldMap map, Animal father, Animal mother)  //constructor of other animals
@@ -32,6 +34,10 @@ public class Animal implements IMapElement {
         this.map = map;
         this.genome = new Genome(father, mother);
         this.position = map.findPlaceForBirth(father.getPosition());
+        this.energy = father.energy / 4 + mother.energy / 4;
+        father.energy -= father.energy / 4;
+        mother.energy -= mother.energy / 4;
+
     }
 
     public Vector2d getPosition()

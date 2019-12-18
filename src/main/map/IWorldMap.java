@@ -73,4 +73,10 @@ public interface IWorldMap {
      */
     Vector2d getRandomEmptyPosition();
 
+    /**
+     * Returns a value of the energy that first animals has at the beginnig of the simulation.
+     * @return
+     */
+    int getStartEnergy();
+
 }

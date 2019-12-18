@@ -10,6 +10,7 @@ import java.util.Random;
 public class WorldMap extends MapSpace {
     Map<Vector2d, IMapElement> elements = new LinkedHashMap<>();
     private static final Random random = new Random();
+    public int startEnergy = 100;
 
 
     public WorldMap(int width, int height, int jungleRelation)
@@ -90,6 +91,11 @@ public class WorldMap extends MapSpace {
             candidate = new Vector2d(random.nextInt(this.width), random.nextInt(this.height));
         }while( !this.isOccupied(candidate) );
         return candidate;
+    }
+
+    public int getStartEnergy()
+    {
+        return startEnergy;
     }
 }
 
