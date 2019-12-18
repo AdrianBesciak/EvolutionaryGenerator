@@ -66,4 +66,11 @@ public interface IWorldMap {
      * @return
      */
     Vector2d findPlaceForBirth(Vector2d parentsPosition);
+
+    /**
+     * Return an empty position, where we can place new animal.
+     * @return
+     */
+    Vector2d getRandomEmptyPosition();
+
 }

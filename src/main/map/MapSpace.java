@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class MapSpace {
-    private int width;
-    private int height;
+    protected int width;
+    protected int height;
     protected final Vector2d higherCorner;
     protected final Vector2d lowerCorner;
     protected Vector2d jungleHigherCorner;

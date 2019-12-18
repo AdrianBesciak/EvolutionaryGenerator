@@ -15,8 +15,7 @@ public class Animal implements IMapElement {
 
     public Animal()
     {
-        direction = MapDirection.NORTH;
-        position = new Vector2d(2,2);
+        direction = direction.getFirstOrientation();
     }
 
     public Animal(IWorldMap map)        //constructor of first animals
@@ -24,6 +23,7 @@ public class Animal implements IMapElement {
         this();
         this.map = map;
         genome = new Genome();
+        this.position = map.getRandomEmptyPosition();
     }
 
     public Animal(IWorldMap map, Animal father, Animal mother)  //constructor of other animals

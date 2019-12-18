@@ -1,11 +1,16 @@
 package map;
 
+import map.animal.Animal;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class WorldMap extends MapSpace {
     Map<Vector2d, IMapElement> elements = new LinkedHashMap<>();
+    private static final Random random = new Random();
+
 
     public WorldMap(int width, int height, int jungleRelation)
     {
@@ -14,8 +19,8 @@ public class WorldMap extends MapSpace {
 
     public boolean place(IMapElement elem)
     {
-        if (this.isOccupied(elem.getPosition()))
-            throw new IllegalArgumentException("Position " + animal.getPosition().toString() + "is occupied by another object");
+       // if (this.isOccupied(elem.getPosition()))
+        //    throw new IllegalArgumentException("Position " + animal.getPosition().toString() + "is occupied by another object");
         elements.put(elem.getPosition(), elem);
         return true;
     }
@@ -69,12 +74,22 @@ public class WorldMap extends MapSpace {
     {
         ArrayList<Vector2d> potentialPlaces = fieldsAroundTarget(parentsPosition);
         for (Vector2d it : potentialPlaces ) {
-            if (this.isOccupied(it) && this.objectAt(it) instanceof NewAnimal)
+            if (this.isOccupied(it) && this.objectAt(it) instanceof Animal)
                 potentialPlaces.remove(it);
         }
         if (potentialPlaces.size() == 0)
             potentialPlaces = fieldsAroundTarget(parentsPosition);
         return potentialPlaces.get(random.nextInt(potentialPlaces.size()));
+    }
+
+    public Vector2d getRandomEmptyPosition()
+    {
+        Vector2d candidate;
+        do
+        {
+            candidate = new Vector2d(random.nextInt(this.width), random.nextInt(this.height));
+        }while( !this.isOccupied(candidate) );
+        return candidate;
     }
 }
 
