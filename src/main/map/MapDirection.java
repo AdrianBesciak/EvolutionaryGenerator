@@ -1,5 +1,7 @@
 package map;
 
+import java.util.Random;
+
 public enum MapDirection {
     NORTH,
     NORTHEAST,
@@ -9,6 +11,9 @@ public enum MapDirection {
     SOUTHWEST,
     WEST,
     NORTHWEST;
+
+    private final int countOfDirections = 8;
+    private static final Random random = new Random();
 
     public String toString(){
         switch (this)
@@ -72,6 +77,12 @@ public enum MapDirection {
                 return new Vector2d(0,0);
 
         }
+    }
+
+    public MapDirection getFirstOrientation()
+    {
+        MapDirection[] dir = MapDirection.values();
+        return dir[random.nextInt(countOfDirections)];
     }
 
 }
