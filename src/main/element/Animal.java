@@ -68,5 +68,9 @@ public class Animal extends MapElement {
         return dir[random.nextInt(MapDirection.getCountOfDirections())];
     }
 
+    public void feed(int energyIncrease)
+    {
+        this.energyLevel = this.energyLevel + energyIncrease;
+    }
 
 }

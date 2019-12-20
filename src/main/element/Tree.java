@@ -4,6 +4,8 @@ import json.StartValues;
 import Maps.IWorldMap;
 import Maps.Vector2d;
 
+import java.util.ArrayList;
+
 public class Tree extends MapElement {
 
     public Tree(IWorldMap map, Vector2d position)
@@ -20,5 +22,26 @@ public class Tree extends MapElement {
     public void move()
     {
         ;
+    }
+
+    public void eatTree(ArrayList<IMapElement> animals)
+    {
+        animals.remove(0);      //remove tree from this list
+
+        int maxEnergyLevel = 0;
+        for (IMapElement it : animals ) {
+            maxEnergyLevel = Math.max(maxEnergyLevel, it.getEnergyLevel());
+        }
+
+        ArrayList<Animal> toFeed = new ArrayList<>();
+
+        for (IMapElement it : animals ) {
+            if (it.getEnergyLevel() == maxEnergyLevel)
+                toFeed.add((Animal)it);
+        }
+
+        for (Animal it : toFeed ) {
+            it.feed(this.energyLevel / toFeed.size());
+        }
     }
 }

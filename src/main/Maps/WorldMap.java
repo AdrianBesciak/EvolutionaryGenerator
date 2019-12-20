@@ -2,6 +2,7 @@ package Maps;
 
 import element.Animal;
 import element.IMapElement;
+import element.Tree;
 
 import java.util.*;
 
@@ -140,6 +141,18 @@ public class WorldMap extends MapSpace implements IWorldMap {
             Vector2d newPosition = it.getPosition();
             elements.get(oldPosition).remove(it);
             elements.get(newPosition).add(it);
+        }
+    }
+
+    public void feedAnimals()
+    {
+        for (IMapElement it : objectsOnTheMap)
+        {
+            if (it instanceof Tree && elements.get(it.getPosition()).size() > 1 )
+            {
+                Tree temp = (Tree) it;
+                temp.eatTree(elements.get(it.getPosition()));
+            }
         }
     }
 
