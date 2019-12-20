@@ -3,15 +3,20 @@ package map.element;
 import json.StartValues;
 import map.*;
 
+import java.util.Random;
+
 public class Animal extends MapElement {
     public Genome genome;
+    protected MapDirection direction;
     private static StartValues startValues = new StartValues();
     private int energy;
+    private static final Random random = new Random();
+
 
     public Animal(IWorldMap map)        //constructor of first animals
     {
         super(map, map.getRandomEmptyPosition());
-
+        this.direction = getFirstOrientation();
         genome = new Genome();
         this.energy = startValues.getEnergyOnStart();
     }
@@ -54,6 +59,12 @@ public class Animal extends MapElement {
     {
         Vector2d positionCandidate = this.position.add(this.genome.getMove().toUnitVector());
         this.position = map.calculateCorrectPositionOfElement(positionCandidate);
+    }
+
+    private MapDirection getFirstOrientation()
+    {
+        MapDirection[] dir = MapDirection.values();
+        return dir[random.nextInt(MapDirection.getCountOfDirections())];
     }
 
 

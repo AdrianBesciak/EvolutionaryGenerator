@@ -23,5 +23,10 @@ public interface IMapElement  {
      */
     String toString();
 
+    /**
+     * Move element on the map
+     */
+    void move();
+
 
 }
