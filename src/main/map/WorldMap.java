@@ -2,27 +2,24 @@ package map;
 
 import map.element.Animal;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class WorldMap extends MapSpace {
-    private Map<Vector2d, ArrayList<IMapElement>> elements = new LinkedHashMap<>();
+    private Map<Vector2d, ArrayList<IMapElement>> elements = new HashMap<>();
     private static final Random random = new Random();
 
     public WorldMap()
     {
         super();
+        for (int i = 0; i < this.width; i++)
+            for (int j = 0; j < this.height; j++)
+                elements.put(new Vector2d(i, j), new ArrayList<IMapElement>());
     }
 
-   /* public boolean place(IMapElement elem)
+    public void place(IMapElement elem)
     {
-       // if (this.isOccupied(elem.getPosition()))
-        //    throw new IllegalArgumentException("Position " + animal.getPosition().toString() + "is occupied by another object");
-        elements.put(elem.getPosition(), elem);
-        return true;
-    }*/
+        
+    }
 
     public boolean isOccupied(Vector2d position)
     {
