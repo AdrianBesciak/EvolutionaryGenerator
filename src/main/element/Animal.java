@@ -11,7 +11,6 @@ public class Animal extends MapElement {
     public Genome genome;
     protected MapDirection direction;
     private static StartValues startValues = new StartValues();
-    private int energy;
     private static final Random random = new Random();
 
 
@@ -20,16 +19,16 @@ public class Animal extends MapElement {
         super(map, map.getRandomEmptyPosition());
         this.direction = getFirstOrientation();
         genome = new Genome();
-        this.energy = startValues.getEnergyOnStart();
+        this.energyLevel = startValues.getEnergyOnStart();
     }
 
     public Animal(IWorldMap map, Animal father, Animal mother)  //constructor of other animals
     {
         super(map, map.calculateCorrectPositionOfElement(map.findPlaceForBirth(father.getPosition())));
         this.genome = new Genome(father, mother);
-        this.energy = father.energy / 4 + mother.energy / 4;
-        father.energy -= father.energy / 4;
-        mother.energy -= mother.energy / 4;
+        this.energyLevel = father.energyLevel / 4 + mother.energyLevel / 4;
+        father.energyLevel -= father.energyLevel / 4;
+        mother.energyLevel -= mother.energyLevel / 4;
 
     }
 

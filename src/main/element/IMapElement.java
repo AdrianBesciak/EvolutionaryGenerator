@@ -29,5 +29,10 @@ public interface IMapElement  {
      */
     void move();
 
+    /**
+     * Returns energy level of the animal, in case of tree - returns how much energy will animal get after eating it
+     */
+    public int getEnergyLevel();
+
 
 }
