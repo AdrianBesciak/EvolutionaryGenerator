@@ -3,34 +3,22 @@ package map.element;
 import json.StartValues;
 import map.*;
 
-public class Animal implements IMapElement {
-    private MapDirection direction;
-    private Vector2d position;
-    private IWorldMap map;
+public class Animal extends MapElement {
     public Genome genome;
     private static StartValues startValues = new StartValues();
     private int energy;
 
-    public Animal()
-    {
-        direction = direction.getFirstOrientation();
-    }
-
     public Animal(IWorldMap map)        //constructor of first animals
     {
-        this();
-        this.map = map;
+        super(map, map.getRandomEmptyPosition());
         genome = new Genome();
-        this.position = map.getRandomEmptyPosition();
         this.energy = startValues.getEnergyOnStart();
     }
 
     public Animal(IWorldMap map, Animal father, Animal mother)  //constructor of other animals
     {
-        this();
-        this.map = map;
+        super(map, map.calculateCorrectPositionOfElement(map.findPlaceForBirth(father.getPosition())));
         this.genome = new Genome(father, mother);
-        this.position = map.findPlaceForBirth(father.getPosition());
         this.energy = father.energy / 4 + mother.energy / 4;
         father.energy -= father.energy / 4;
         mother.energy -= mother.energy / 4;
