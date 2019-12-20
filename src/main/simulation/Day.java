@@ -20,7 +20,7 @@ public class Day {
     public void nextDay()
     {
         map.makeFuneral();
-        //move animals
+        map.moveAnimals();
         //eat
         //reproduce
         addTrees();

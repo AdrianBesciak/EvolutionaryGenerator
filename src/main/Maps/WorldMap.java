@@ -132,5 +132,16 @@ public class WorldMap extends MapSpace implements IWorldMap {
         }
     }
 
+    public void moveAnimals()
+    {
+        for (IMapElement it : objectsOnTheMap ) {
+            Vector2d oldPosition = it.getPosition();
+            it.move();
+            Vector2d newPosition = it.getPosition();
+            elements.get(oldPosition).remove(it);
+            elements.get(newPosition).add(it);
+        }
+    }
+
 }
 
