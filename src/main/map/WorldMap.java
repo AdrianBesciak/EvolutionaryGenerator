@@ -18,7 +18,7 @@ public class WorldMap extends MapSpace {
 
     public void place(IMapElement elem)
     {
-        
+        elements.get(elem.getPosition()).add(elem);
     }
 
     public boolean isOccupied(Vector2d position)
