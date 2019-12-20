@@ -12,8 +12,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Arquillian JUnit Test Class" />
         <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
   </component>
@@ -48,29 +48,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MapDirectionTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="EvolutionaryGenerator" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Test" />
-      <module name="EvolutionaryGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MapSpaceTest.getJungleLowerCorner">
     <configuration name="All in EvolutionaryGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EvolutionaryGenerator" />
       <option name="PACKAGE_NAME" value="" />
@@ -94,18 +72,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MapSpaceTest.belongsToJungle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionaryGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="map" />
+      <option name="MAIN_CLASS_NAME" value="map.MapSpaceTest" />
+      <option name="METHOD_NAME" value="belongsToJungle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapSpaceTest.getJungleHigherCorner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionaryGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="map" />
+      <option name="MAIN_CLASS_NAME" value="map.MapSpaceTest" />
+      <option name="METHOD_NAME" value="getJungleHigherCorner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapSpaceTest.getJungleLowerCorner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionaryGenerator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="map" />
+      <option name="MAIN_CLASS_NAME" value="map.MapSpaceTest" />
+      <option name="METHOD_NAME" value="getJungleLowerCorner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="JUnit.All in EvolutionaryGenerator" />
       <item itemvalue="JUnit.MapDirectionTest" />
+      <item itemvalue="JUnit.MapSpaceTest.belongsToJungle" />
+      <item itemvalue="JUnit.MapSpaceTest.getJungleHigherCorner" />
+      <item itemvalue="JUnit.MapSpaceTest.getJungleLowerCorner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MapSpaceTest.getJungleLowerCorner" />
+        <item itemvalue="JUnit.MapSpaceTest.getJungleHigherCorner" />
+        <item itemvalue="JUnit.MapSpaceTest.belongsToJungle" />
         <item itemvalue="JUnit.MapDirectionTest" />
         <item itemvalue="JUnit.All in EvolutionaryGenerator" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -137,6 +165,7 @@
       <workItem from="1576626355176" duration="1211000" />
       <workItem from="1576629006405" duration="5397000" />
       <workItem from="1576674139903" duration="4573000" />
+      <workItem from="1576856920873" duration="4895000" />
     </task>
     <servers />
   </component>
@@ -165,31 +194,35 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="67" y="27" width="946" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576499103011" />
-    <state width="881" height="278" key="GridCell.Tab.0.bottom" timestamp="1576497451003">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1874" height="295" key="GridCell.Tab.0.bottom" timestamp="1576865646197">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1874" height="295" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576865646197" />
     <state width="881" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576497451003" />
-    <state width="881" height="278" key="GridCell.Tab.0.center" timestamp="1576497451003">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1874" height="295" key="GridCell.Tab.0.center" timestamp="1576865646196">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1874" height="295" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576865646196" />
     <state width="881" height="278" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576497451003" />
-    <state width="881" height="278" key="GridCell.Tab.0.left" timestamp="1576497451003">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1874" height="295" key="GridCell.Tab.0.left" timestamp="1576865646196">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1874" height="295" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576865646196" />
     <state width="881" height="278" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576497451003" />
-    <state width="881" height="278" key="GridCell.Tab.0.right" timestamp="1576497451003">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1874" height="295" key="GridCell.Tab.0.right" timestamp="1576865646197">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state width="1874" height="295" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576865646197" />
     <state width="881" height="278" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576497451003" />
     <state x="1920" y="130" width="1920" height="845" key="SettingsEditor" timestamp="1576687937586">
       <screen x="67" y="27" width="3773" height="1053" />
     </state>
     <state x="476" y="130" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576487700623" />
     <state x="1920" y="130" width="1920" height="845" key="SettingsEditor/67.27.3773.1053@67.27.3773.1053" timestamp="1576687937586" />
-    <state x="186" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1576686942459">
-      <screen x="67" y="27" width="3773" height="1053" />
+    <state x="2043" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576856922404">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2043" y="363" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576629110130" />
+    <state x="2043" y="363" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576856922404" />
     <state x="186" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576511036643" />
     <state x="186" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576599733059" />
     <state x="186" y="381" key="com.intellij.ide.util.TipDialog/67.27.3773.1053@67.27.3773.1053" timestamp="1576686942459" />
@@ -198,9 +231,10 @@
     </state>
     <state x="660" y="448" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576487563230" />
     <state x="1920" y="448" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/67.27.3773.1053@67.27.3773.1053" timestamp="1576687916813" />
-    <state x="1178" y="198" width="469" height="590" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576498281141">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="3071" y="175" width="469" height="590" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576863395853">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="3071" y="175" width="469" height="590" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576863395853" />
     <state x="1178" y="198" width="469" height="590" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576498281141" />
   </component>
 </project>

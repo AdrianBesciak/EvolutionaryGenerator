@@ -25,11 +25,6 @@ public class Animal extends MapElement {
 
     }
 
-    public Vector2d getPosition()
-    {
-        return this.position;
-    }
-
     public String toString(){
         switch (this.direction)
         {

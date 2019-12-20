@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Random;
 
 public class WorldMap extends MapSpace {
-    Map<Vector2d, IMapElement> elements = new LinkedHashMap<>();
+    private Map<Vector2d, ArrayList<IMapElement>> elements = new LinkedHashMap<>();
     private static final Random random = new Random();
 
     public WorldMap()
@@ -16,13 +16,13 @@ public class WorldMap extends MapSpace {
         super();
     }
 
-    public boolean place(IMapElement elem)
+   /* public boolean place(IMapElement elem)
     {
        // if (this.isOccupied(elem.getPosition()))
         //    throw new IllegalArgumentException("Position " + animal.getPosition().toString() + "is occupied by another object");
         elements.put(elem.getPosition(), elem);
         return true;
-    }
+    }*/
 
     public boolean isOccupied(Vector2d position)
     {
@@ -88,6 +88,27 @@ public class WorldMap extends MapSpace {
         {
             candidate = new Vector2d(random.nextInt(this.width), random.nextInt(this.height));
         }while( !this.isOccupied(candidate) );
+        return candidate;
+    }
+
+    public Vector2d getRandomJunglePosition()
+    {
+        Vector2d candidate;
+        do{
+            candidate = new Vector2d(random.nextInt(jungleWidth), random.nextInt(jungleHeight));
+            candidate = candidate.add(jungleLowerCorner);
+        }while( this.isOccupied(candidate) );
+        return candidate;
+    }
+
+    public Vector2d getRandomNonJunglePosition()
+    {
+        Vector2d candidate;
+        do{
+            candidate = new Vector2d(random.nextInt(this.width), random.nextInt(this.height));
+
+        }while(!this.isOccupied(candidate) || this.belongsToJungle(candidate));
+
         return candidate;
     }
 

@@ -8,6 +8,8 @@ import java.util.Random;
 public class MapSpace {
     protected int width;
     protected int height;
+    protected int jungleWidth;
+    protected int jungleHeight;
     protected final Vector2d higherCorner;
     protected final Vector2d lowerCorner;
     protected Vector2d jungleHigherCorner;
@@ -17,8 +19,8 @@ public class MapSpace {
 
     public MapSpace()
     {
-        this.width = startValues.getMapWidth();
-        this.height = startValues.getMapHeight();
+        width = startValues.getMapWidth();
+        height = startValues.getMapHeight();
         this.higherCorner = new Vector2d(this.width, this.height);
         this.lowerCorner = new Vector2d(0, 0);
         if (startValues.getJungleRelationToMap() < 0 || startValues.getJungleRelationToMap() > 100)
@@ -37,5 +39,10 @@ public class MapSpace {
     public Vector2d getJungleHigherCorner(){return jungleHigherCorner;}
 
     public Vector2d getJungleLowerCorner(){return jungleLowerCorner;}
+
+    public boolean belongsToJungle(Vector2d position)
+    {
+        return (position.precedes(jungleHigherCorner) && position.follows(jungleLowerCorner));
+    }
 
 }

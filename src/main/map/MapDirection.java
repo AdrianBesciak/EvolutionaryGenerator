@@ -12,7 +12,7 @@ public enum MapDirection {
     WEST,
     NORTHWEST;
 
-    private final int countOfDirections = 8;
+    private static final int countOfDirections = 8;
     private static final Random random = new Random();
 
     public String toString(){
@@ -79,10 +79,11 @@ public enum MapDirection {
         }
     }
 
-    public MapDirection getFirstOrientation()
+    public static int getCountOfDirections()
     {
-        MapDirection[] dir = MapDirection.values();
-        return dir[random.nextInt(countOfDirections)];
+        return countOfDirections;
     }
+
+
 
 }

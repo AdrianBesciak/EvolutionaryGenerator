@@ -73,5 +73,17 @@ public interface IWorldMap {
      */
     Vector2d getRandomEmptyPosition();
 
+    /**
+     * Return an empty position to place a tree in a Jungle
+     * @return
+     */
+    Vector2d getRandomJunglePosition();
+
+    /**
+     * Return an empty position to place a tree outside a Jungle
+     * @return
+     */
+    Vector2d getRandomNonJunglePosition();
+
 
 }
