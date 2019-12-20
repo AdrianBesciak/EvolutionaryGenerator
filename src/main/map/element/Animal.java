@@ -11,6 +11,7 @@ public class Animal extends MapElement {
     public Animal(IWorldMap map)        //constructor of first animals
     {
         super(map, map.getRandomEmptyPosition());
+
         genome = new Genome();
         this.energy = startValues.getEnergyOnStart();
     }

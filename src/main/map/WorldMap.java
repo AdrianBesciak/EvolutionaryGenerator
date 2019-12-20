@@ -4,8 +4,9 @@ import map.element.Animal;
 
 import java.util.*;
 
-public class WorldMap extends MapSpace {
+public class WorldMap extends MapSpace implements IWorldMap {
     private Map<Vector2d, ArrayList<IMapElement>> elements = new HashMap<>();
+    private ArrayList<IMapElement> objectsOnTheMap = new ArrayList<>();
     private static final Random random = new Random();
 
     public WorldMap()
@@ -19,19 +20,19 @@ public class WorldMap extends MapSpace {
     public void place(IMapElement elem)
     {
         elements.get(elem.getPosition()).add(elem);
+        objectsOnTheMap.add(elem);
     }
 
     public boolean isOccupied(Vector2d position)
     {
-        /*if (objectAt(position) == null)
+        if (listOfObjectsAt(position).size() == 0)
             return false;
-        return true;*/
-        return false;
+        return true;
     }
 
-    public Object objectAt(Vector2d position)
+    public ArrayList<IMapElement> listOfObjectsAt(Vector2d position)
     {
-        return elements.get(position);       //object at specified position or null if there is nothing
+        return elements.get(position);
     }
 
     public Vector2d calculateCorrectPositionOfElement(Vector2d position)
@@ -67,11 +68,20 @@ public class WorldMap extends MapSpace {
         return fields;
     }
 
+    public boolean onlyAnimalsAt (ArrayList<IMapElement> list)
+    {
+        for (IMapElement it: list ) {
+            if ( !(it instanceof Animal))
+                return false;
+        }
+        return true;
+    }
+
     public Vector2d findPlaceForBirth(Vector2d parentsPosition)
     {
         ArrayList<Vector2d> potentialPlaces = fieldsAroundTarget(parentsPosition);
         for (Vector2d it : potentialPlaces ) {
-            if (this.isOccupied(it) && this.objectAt(it) instanceof Animal)
+            if (this.isOccupied(it) && this.onlyAnimalsAt(listOfObjectsAt(it)) )
                 potentialPlaces.remove(it);
         }
         if (potentialPlaces.size() == 0)
@@ -85,7 +95,8 @@ public class WorldMap extends MapSpace {
         do
         {
             candidate = new Vector2d(random.nextInt(this.width), random.nextInt(this.height));
-        }while( !this.isOccupied(candidate) );
+        }while( this.isOccupied(candidate) );
+
         return candidate;
     }
 
