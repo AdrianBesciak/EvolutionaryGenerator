@@ -6,6 +6,7 @@ public class StartValues {
     private int mapHeight = 100;
     private int jungleRelationToMap = 40;
     private static int energyOfTree = 20;
+    private static int animalsOnStart = 4;
 
     public int getEnergyOnStart() {
         return energyOnStart;
@@ -25,5 +26,10 @@ public class StartValues {
 
     public static int getEnergyOfTree() {
         return energyOfTree;
+    }
+
+    public static int getAnimalsOnStart()
+    {
+        return animalsOnStart;
     }
 }
