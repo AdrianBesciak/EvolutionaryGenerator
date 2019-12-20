@@ -1,6 +1,7 @@
-package map;
+package Maps;
 
-import map.element.Animal;
+import element.Animal;
+import element.IMapElement;
 
 import java.util.*;
 

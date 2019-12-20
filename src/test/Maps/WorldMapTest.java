@@ -1,13 +1,13 @@
-package map;
+package Maps;
 
-import map.element.Animal;
+import Maps.Vector2d;
+import Maps.WorldMap;
+import element.Animal;
+import element.IMapElement;
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import java.util.Random;
-
-import static org.junit.Assert.*;
 
 /**
  * Tests are prepared for StartValues:

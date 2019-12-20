@@ -1,8 +1,7 @@
-package map;
+package Maps;
 
 import json.StartValues;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public class MapSpace {

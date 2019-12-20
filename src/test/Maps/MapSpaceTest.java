@@ -1,11 +1,10 @@
-package map;
+package Maps;
 
 
+import Maps.MapSpace;
+import Maps.Vector2d;
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-
-import static org.junit.Assert.*;
 
 
 /**

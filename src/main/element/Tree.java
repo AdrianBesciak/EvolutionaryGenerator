@@ -1,8 +1,8 @@
-package map.element;
+package element;
 
 import json.StartValues;
-import map.IWorldMap;
-import map.Vector2d;
+import Maps.IWorldMap;
+import Maps.Vector2d;
 
 public class Tree extends MapElement {
     private int energy;

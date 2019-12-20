@@ -1,6 +1,7 @@
-package map;
+package element;
 
 
+import Maps.Vector2d;
 
 /**
  * The interface responsible for methods in elements on the map

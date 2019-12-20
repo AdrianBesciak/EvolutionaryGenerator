@@ -1,6 +1,6 @@
-package map.element;
+package element;
 
-import map.MapDirection;
+import Maps.MapDirection;
 
 import java.util.ArrayList;
 import java.util.Collections;

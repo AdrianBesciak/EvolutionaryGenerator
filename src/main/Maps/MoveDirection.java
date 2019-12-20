@@ -1,4 +1,4 @@
-package map;
+package Maps;
 
 public enum MoveDirection {
     FORWARD,

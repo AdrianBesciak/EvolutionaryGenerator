@@ -1,9 +1,7 @@
-package map.element;
+package element;
 
-import map.IMapElement;
-import map.IWorldMap;
-import map.MapDirection;
-import map.Vector2d;
+import Maps.IWorldMap;
+import Maps.Vector2d;
 
 import java.util.Random;
 
