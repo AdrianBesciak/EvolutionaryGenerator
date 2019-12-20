@@ -19,7 +19,7 @@ public class Day {
 
     public void nextDay()
     {
-        //delete dead animals from the map
+        map.makeFuneral();
         //move animals
         //eat
         //reproduce
@@ -27,9 +27,12 @@ public class Day {
 
     }
 
+
     private void addTrees()
     {
         map.place(new Tree(map, map.getRandomJunglePosition()));
         map.place(new Tree(map, map.getRandomNonJunglePosition()));
     }
+
+
 }

@@ -121,5 +121,16 @@ public class WorldMap extends MapSpace implements IWorldMap {
         return candidate;
     }
 
+    public void makeFuneral()
+    {
+        for (IMapElement it : objectsOnTheMap ) {
+            if ( it.getEnergyLevel() <= 0 )
+            {
+                elements.get(it.getPosition()).remove(it);
+                objectsOnTheMap.remove(it);
+            }
+        }
+    }
+
 }
 
