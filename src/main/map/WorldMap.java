@@ -26,9 +26,10 @@ public class WorldMap extends MapSpace {
 
     public boolean isOccupied(Vector2d position)
     {
-        if (objectAt(position) == null)
+        /*if (objectAt(position) == null)
             return false;
-        return true;
+        return true;*/
+        return false;
     }
 
     public Object objectAt(Vector2d position)
@@ -106,8 +107,7 @@ public class WorldMap extends MapSpace {
         Vector2d candidate;
         do{
             candidate = new Vector2d(random.nextInt(this.width), random.nextInt(this.height));
-
-        }while(!this.isOccupied(candidate) || this.belongsToJungle(candidate));
+        }while( this.isOccupied(candidate) || this.belongsToJungle(candidate));
 
         return candidate;
     }

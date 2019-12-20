@@ -30,8 +30,8 @@ public class MapSpace {
 
     private void setJungleSize(int proportion)
     {
-        int jungleWidth = this.width * proportion / 100;
-        int jungleHeight = this.height * proportion / 100;
+        this.jungleWidth = this.width * proportion / 100;
+        this.jungleHeight = this.height * proportion / 100;
         this.jungleHigherCorner = new Vector2d(this.width / 2 + jungleWidth / 2, this.height / 2 + jungleHeight / 2);
         this.jungleLowerCorner = new Vector2d(this.width / 2 - jungleWidth / 2, this.height / 2 - jungleHeight / 2);
     }
