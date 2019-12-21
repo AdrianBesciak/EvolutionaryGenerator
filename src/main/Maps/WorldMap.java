@@ -3,6 +3,7 @@ package Maps;
 import element.Animal;
 import element.IMapElement;
 import element.Tree;
+import json.StartValues;
 
 import java.util.*;
 
@@ -221,7 +222,8 @@ public class WorldMap extends MapSpace implements IWorldMap {
                     }
                 }
             }
-            this.place(new Animal(this, first, second));
+            if (second.getEnergyLevel() > StartValues.getEnergyOnStart() / 2)
+                this.place(new Animal(this, first, second));
         }
     }
 

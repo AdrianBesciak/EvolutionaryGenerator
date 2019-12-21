@@ -1,7 +1,7 @@
 package json;
 
 public class StartValues {
-    private int energyOnStart = 100;
+    private static int energyOnStart = 100;
     private int mapWidth = 100;
     private int mapHeight = 100;
     private int jungleRelationToMap = 40;
@@ -9,7 +9,7 @@ public class StartValues {
     private static int animalsOnStart = 20;
     private static int dailyUsedEnergy = 10;
 
-    public int getEnergyOnStart() {
+    public static int getEnergyOnStart() {
         return energyOnStart;
     }
 
