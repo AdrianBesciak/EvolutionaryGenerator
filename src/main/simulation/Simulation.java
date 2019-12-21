@@ -3,15 +3,17 @@ package simulation;
 import Maps.Vector2d;
 import Maps.WorldMap;
 import element.Animal;
-import element.IMapElement;
 import element.Tree;
 import json.StartValues;
 
 public class Simulation {
     WorldMap map;
+    StartValues val;
 
     public Simulation()
     {
+        val = new StartValues();
+        //StartValues.loadStartValues();
         map = new WorldMap();
         for (int i = 0; i < StartValues.getAnimalsOnStart(); i++)
             map.place(new Animal(map));

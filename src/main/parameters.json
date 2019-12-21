@@ -5,6 +5,5 @@
   "moveEnergy": 10,
   "plantEnergy": 20,
   "jungleRatio": 40,
-  "animalsOnStart": 20;
-
+  "animalsOnStart": 20
 }
