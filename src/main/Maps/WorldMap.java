@@ -156,5 +156,50 @@ public class WorldMap extends MapSpace implements IWorldMap {
         }
     }
 
+    public void reproduction()
+    {
+        ArrayList<Vector2d> reproductionList = new ArrayList<>();
+        for (int i = 0; i < this.width; i++)
+        {
+            for (int j = 0; j < this.height; j++)
+            {
+                if ( elements.get(new Vector2d(i, j)).size() > 1 )
+                    reproductionList.add(new Vector2d(i, j));
+            }
+        }
+
+        for (Vector2d position : reproductionList)
+        {
+            Animal first = null;
+            Animal second = null;
+            for (IMapElement animal : elements.get(position) ) {
+                if (first == null)
+                    first = (Animal) animal;
+                else if (second == null)
+                {
+                    if (animal.getEnergyLevel() < first.getEnergyLevel())
+                        second = (Animal) animal;
+                    else
+                    {
+                        second = first;
+                        first = (Animal) animal;
+                    }
+                }
+                else
+                {
+                    if (animal.getEnergyLevel() > first.getEnergyLevel())
+                    {
+                        second = first;
+                        first = (Animal) animal;
+                    } else if (animal.getEnergyLevel() > second.getEnergyLevel())
+                    {
+                        second = (Animal) animal;
+                    }
+                }
+            }
+            this.place(new Animal(this, first, second));
+        }
+    }
+
 }
 

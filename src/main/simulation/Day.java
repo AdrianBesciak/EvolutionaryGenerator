@@ -21,8 +21,8 @@ public class Day {
     {
         map.makeFuneral();
         map.moveAnimals();
-        //eat
-        //reproduce
+        map.feedAnimals();
+        map.reproduction();
         addTrees();
 
     }
