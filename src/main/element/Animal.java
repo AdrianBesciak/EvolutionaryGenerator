@@ -58,7 +58,8 @@ public class Animal extends MapElement {
 
     public void move()
     {
-        Vector2d positionCandidate = this.position.add(this.genome.getMove().toUnitVector());
+        this.direction = this.genome.getMove();
+        Vector2d positionCandidate = this.position.add(this.direction.toUnitVector());
         this.position = map.calculateCorrectPositionOfElement(positionCandidate);
         this.energyLevel = this.energyLevel - StartValues.getDailyUsedEnergy();
     }
