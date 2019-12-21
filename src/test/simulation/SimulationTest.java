@@ -2,15 +2,12 @@ package simulation;
 
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
-
-public class DayTest {
+public class SimulationTest {
 
     @Test
     public void nextDay() {
-        Day simulation = new Day();
+        Simulation simulation = new Simulation();
 
         for (int i = 0; i < 8000; i++)
         {

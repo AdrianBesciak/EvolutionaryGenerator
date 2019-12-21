@@ -7,10 +7,10 @@ import element.IMapElement;
 import element.Tree;
 import json.StartValues;
 
-public class Day {
+public class Simulation {
     WorldMap map;
 
-    public Day()
+    public Simulation()
     {
         map = new WorldMap();
         for (int i = 0; i < StartValues.getAnimalsOnStart(); i++)
