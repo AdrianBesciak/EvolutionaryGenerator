@@ -145,8 +145,8 @@ public class WorldMap extends MapSpace implements IWorldMap {
             Vector2d oldPosition = it.getPosition();
             it.move();
             Vector2d newPosition = it.getPosition();
-            elements.get(oldPosition).remove(it);
             elements.get(newPosition).add(it);
+            elements.get(oldPosition).remove(it);
         }
     }
 
