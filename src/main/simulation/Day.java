@@ -1,5 +1,6 @@
 package simulation;
 
+import Maps.Vector2d;
 import Maps.WorldMap;
 import element.Animal;
 import element.IMapElement;
@@ -30,8 +31,12 @@ public class Day {
 
     private void addTrees()
     {
-        map.place(new Tree(map, map.getRandomJunglePosition()));
-        map.place(new Tree(map, map.getRandomNonJunglePosition()));
+        Vector2d candidate = map.getRandomJunglePosition();
+        if (candidate != null)
+            map.place(new Tree(map, candidate));
+        candidate = map.getRandomNonJunglePosition();
+        if (candidate != null)
+            map.place(new Tree(map, candidate));
     }
 
 

@@ -26,6 +26,7 @@ public class Tree extends MapElement {
 
     public void eatTree(ArrayList<IMapElement> animals)
     {
+        this.energyLevel = -1;
         animals.remove(0);      //remove tree from this list
 
         int maxEnergyLevel = 0;

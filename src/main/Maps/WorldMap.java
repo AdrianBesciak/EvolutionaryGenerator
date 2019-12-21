@@ -105,19 +105,27 @@ public class WorldMap extends MapSpace implements IWorldMap {
 
     public Vector2d getRandomJunglePosition()
     {
+        int i = jungleHeight * jungleWidth;
         Vector2d candidate;
         do{
             candidate = new Vector2d(random.nextInt(jungleWidth), random.nextInt(jungleHeight));
             candidate = candidate.add(jungleLowerCorner);
+            i--;
+            if (i == 0)
+                return null;
         }while( this.isOccupied(candidate) );
         return candidate;
     }
 
     public Vector2d getRandomNonJunglePosition()
     {
+        int i = 0;
         Vector2d candidate;
         do{
             candidate = new Vector2d(random.nextInt(this.width), random.nextInt(this.height));
+            i--;
+            if (i == 0)
+                return null;
         }while( this.isOccupied(candidate) || this.belongsToJungle(candidate));
 
         return candidate;

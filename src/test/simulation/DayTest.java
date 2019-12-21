@@ -12,7 +12,7 @@ public class DayTest {
     public void nextDay() {
         Day simulation = new Day();
 
-        for (int i = 0; i < 1000; i++)
+        for (int i = 0; i < 8000; i++)
         {
             simulation.nextDay();
         }
