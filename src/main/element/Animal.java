@@ -60,6 +60,7 @@ public class Animal extends MapElement {
     {
         Vector2d positionCandidate = this.position.add(this.genome.getMove().toUnitVector());
         this.position = map.calculateCorrectPositionOfElement(positionCandidate);
+        this.energyLevel = this.energyLevel - StartValues.getDailyUsedEnergy();
     }
 
     private MapDirection getFirstOrientation()
