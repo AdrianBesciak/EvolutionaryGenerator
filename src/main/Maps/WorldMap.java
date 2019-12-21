@@ -124,12 +124,18 @@ public class WorldMap extends MapSpace implements IWorldMap {
 
     public void makeFuneral()
     {
+        ArrayList<IMapElement> deathNote = new ArrayList<>();
         for (IMapElement it : objectsOnTheMap ) {
             if ( it.getEnergyLevel() <= 0 )
             {
-                elements.get(it.getPosition()).remove(it);
-                objectsOnTheMap.remove(it);
+                deathNote.add(it);
             }
+        }
+
+        for (IMapElement it : deathNote)
+        {
+            elements.get(it.getPosition()).remove(it);
+            objectsOnTheMap.remove(it);
         }
     }
 
