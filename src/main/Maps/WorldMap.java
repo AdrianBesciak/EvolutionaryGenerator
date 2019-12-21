@@ -82,9 +82,10 @@ public class WorldMap extends MapSpace implements IWorldMap {
     public Vector2d findPlaceForBirth(Vector2d parentsPosition)
     {
         ArrayList<Vector2d> potentialPlaces = fieldsAroundTarget(parentsPosition);
-        for (Vector2d it : potentialPlaces ) {
-            if (this.isOccupied(it) && this.onlyAnimalsAt(listOfObjectsAt(it)) )
-                potentialPlaces.remove(it);
+        for (int i = 0; i < potentialPlaces.size(); i++)
+        {
+            if (this.isOccupied(potentialPlaces.get(i)) && this.onlyAnimalsAt(listOfObjectsAt(potentialPlaces.get(i))) )
+                potentialPlaces.remove(potentialPlaces.get(i));
         }
         if (potentialPlaces.size() == 0)
             potentialPlaces = fieldsAroundTarget(parentsPosition);
@@ -142,11 +143,20 @@ public class WorldMap extends MapSpace implements IWorldMap {
     public void moveAnimals()
     {
         for (IMapElement it : objectsOnTheMap ) {
-            Vector2d oldPosition = it.getPosition();
-            it.move();
-            Vector2d newPosition = it.getPosition();
-            elements.get(newPosition).add(it);
-            elements.get(oldPosition).remove(it);
+            if ( !(it instanceof Tree) )
+            {
+                Vector2d oldPosition = it.getPosition();
+                it.move();
+                Vector2d newPosition = it.getPosition();
+                if (elements.get(newPosition) == null)
+                    elements.put(newPosition, new ArrayList<IMapElement>());
+
+                elements.get(newPosition).add(it);
+
+                elements.get(oldPosition).remove(it);
+
+            }
+
         }
     }
 
