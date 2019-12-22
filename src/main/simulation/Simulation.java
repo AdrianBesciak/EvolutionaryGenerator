@@ -7,13 +7,12 @@ import element.Tree;
 import json.StartValues;
 
 public class Simulation {
-    WorldMap map;
-    StartValues val;
+    public WorldMap map;
+    public StartValues val;
 
     public Simulation()
     {
         val = new StartValues();
-        //StartValues.loadStartValues();
         map = new WorldMap();
         for (int i = 0; i < StartValues.getAnimalsOnStart(); i++)
             map.place(new Animal(map));

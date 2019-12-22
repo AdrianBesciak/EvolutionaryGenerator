@@ -58,15 +58,15 @@ public class StartValues {
         return startEnergy;
     }
 
-    public int getMapWidth() {
+    public static int getMapWidth() {
         return width;
     }
 
-    public int getMapHeight() {
+    public static int getMapHeight() {
         return height;
     }
 
-    public int getJungleRelationToMap() {
+    public static int getJungleRelationToMap() {
         return jungleRatio;
     }
 
