@@ -28,6 +28,8 @@ public class WorldMap extends MapSpace implements IWorldMap {
 
     public boolean isOccupied(Vector2d position)
     {
+        if (listOfObjectsAt(position) == null)
+            return false;
         if (listOfObjectsAt(position).size() == 0)
             return false;
         return true;
@@ -225,6 +227,17 @@ public class WorldMap extends MapSpace implements IWorldMap {
             if (second.getEnergyLevel() > StartValues.getEnergyOnStart() / 2)
                 this.place(new Animal(this, first, second));
         }
+    }
+
+    public Integer getCountOfAnimal()
+    {
+        Integer count = new Integer(0);
+        for (IMapElement it: objectsOnTheMap )
+        {
+            if (it instanceof Animal)
+                count++;
+        }
+        return count;
     }
 
 }

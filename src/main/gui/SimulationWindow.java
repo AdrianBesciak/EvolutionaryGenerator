@@ -22,8 +22,9 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import json.StartValues;
 import simulation.Simulation;
+import javafx.scene.control.Label;
 
-import java.awt.*;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -153,6 +154,8 @@ public class SimulationWindow extends Application {
             }
         });
         grid.add(playButton, StartValues.getMapHeight()/2 - 4, StartValues.getMapHeight() + 5, 4, 1);
+        Label animalsCount = new Label("On the map lives " + sim.map.getCountOfAnimal().toString() + " animals");
+        grid.add(animalsCount, StartValues.getMapHeight()/2 + 4, StartValues.getMapWidth() + 5, 5,1);
         return grid;
     }
 
