@@ -1,6 +1,8 @@
 package gui;
 
 import Maps.Vector2d;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -17,18 +19,20 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import json.StartValues;
 import simulation.Simulation;
 
+import java.awt.*;
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class SimulationWindow extends Application {
-    private static final int TILE_SIZE = 40;
-    private static final int HEIGHT = 800;
-    private static final int WIDTH = 600;
 
-    private static final int X_TILES = WIDTH / TILE_SIZE;
-    private static final int Y_TILES = HEIGHT / TILE_SIZE;
-
-
+    private Stage window;
+    private Scene initialScene;
+    private Scene visualizationScene;
+    private Simulation sim;
 
     public static void main(String[] args) {
         launch(args);
@@ -36,33 +40,15 @@ public class SimulationWindow extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Button btnRunSimulation = new Button("Run Simulation");
-        btnRunSimulation.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                System.out.println("start the simulation");
+        window = primaryStage;
 
-            }
-        });
-        HBox border = new HBox();
-        border.getChildren().addAll(addInitialValues(), addGridPane());
+        initialScene = new Scene(addInitialValues());
 
-
-      //  Scene scene = new Scene(border, 1024, 720);
-        Scene scene = new Scene(border);
-
-        primaryStage.setScene(scene);
+        primaryStage.setScene(initialScene);
         primaryStage.setTitle("Evolutionary Generator");
         primaryStage.show();
     }
 
-    private Parent createContent()
-    {
-        Pane root = new Pane();
-        root.setPrefSize(WIDTH,HEIGHT);
-
-        return root;
-    }
 
     public VBox addInitialValues()
     {
@@ -88,7 +74,15 @@ public class SimulationWindow extends Application {
         btnRunSimulation.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                System.out.println("start the simulation");
+                sim = new Simulation();
+                visualizationScene = new Scene(addGridPane(sim));
+                window.setScene(visualizationScene);
+                window.show();
+
+                new Timeline(new KeyFrame(
+                        Duration.millis(2500),
+                        ae -> getNextFrame()))
+                        .play();
 
             }
         });
@@ -98,16 +92,16 @@ public class SimulationWindow extends Application {
         return vbox;
     }
 
-    public GridPane addGridPane()
+
+
+    public GridPane addGridPane(Simulation sim)
     {
         GridPane grid = new GridPane();
-        grid.setPadding(new Insets(10,10,0,10));
+        grid.setPadding(new Insets(10,10,10,10));
         grid.setVgap(5);
         grid.setHgap(5);
         grid.setGridLinesVisible(false);
 
-
-        Simulation sim = new Simulation();
 
 
         for (int x = 0; x < StartValues.getMapWidth(); x++)
@@ -127,7 +121,16 @@ public class SimulationWindow extends Application {
         return grid;
     }
 
-
+    public void getNextFrame() {
+            sim.nextDay();
+            Scene nextVisualizationScene = new Scene(addGridPane(sim));
+            window.setScene(nextVisualizationScene);
+            window.show();
+        new Timeline(new KeyFrame(
+                Duration.millis(500),
+                ae -> getNextFrame()))
+                .play();
+    };
 
 
 

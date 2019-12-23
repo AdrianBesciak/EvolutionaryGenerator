@@ -1,269 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="734a778b-7c57-43bf-b32c-a2c5f5f8f841" name="Default Changelist" comment="" />
+    <list default="true" id="d14647a3-7d1c-44a4-bd9b-e1dbd4039dae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_8_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EvolutionaryGenerator/META-INF/EvolutionaryGenerator.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EvolutionaryGenerator/META-INF/EvolutionaryGenerator.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EvolutionaryGenerator/map/animal/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gui/GUILabelAndTextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gui/GUILabelAndTextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gui/SimulationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gui/SimulationView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gui/SimulationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gui/SimulationWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/simulation/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/Simulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/simulation/SimulationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/controller/SimulationTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="package.json" />
-        <option value="Arquillian JUnit Test Class" />
-        <option value="JavaFXApplication" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1V3f6rHHqgsJ5TmwJdI7KEynLx0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
+  <component name="ProjectId" id="1VOay21xB7dCr5F9yZPw4saWFEC" />
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="json" />
-      <recent name="simulation" />
-      <recent name="map" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Maps" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/json" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.SimulationWindow">
-    <configuration name="SimulationWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.SimulationWindow" />
-      <module name="EvolutionaryGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in EvolutionaryGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EvolutionaryGenerator" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoadStartValuesTest.loadStartValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EvolutionaryGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="json.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="json" />
-      <option name="MAIN_CLASS_NAME" value="json.LoadStartValuesTest" />
-      <option name="METHOD_NAME" value="loadStartValues" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimulationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EvolutionaryGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="simulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="simulation" />
-      <option name="MAIN_CLASS_NAME" value="simulation.SimulationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TemporaryParametersTest.TemporaryParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EvolutionaryGenerator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="json.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="json" />
-      <option name="MAIN_CLASS_NAME" value="json.TemporaryParametersTest" />
-      <option name="METHOD_NAME" value="TemporaryParameters" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="JUnit.LoadStartValuesTest.loadStartValues" />
-      <item itemvalue="JUnit.TemporaryParametersTest.TemporaryParameters" />
-      <item itemvalue="JUnit.All in EvolutionaryGenerator" />
-      <item itemvalue="Application.SimulationWindow" />
-      <item itemvalue="JUnit.SimulationTest" />
-    </list>
-    <recent_temporary>
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <item itemvalue="Application.SimulationWindow" />
-        <item itemvalue="JUnit.SimulationTest" />
-        <item itemvalue="JUnit.All in EvolutionaryGenerator" />
-        <item itemvalue="JUnit.TemporaryParametersTest.TemporaryParameters" />
-        <item itemvalue="JUnit.LoadStartValuesTest.loadStartValues" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="window" type="Application" factoryName="Application">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="gui.SimulationWindow" />
+      <module name="EvolutionaryGenerator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="734a778b-7c57-43bf-b32c-a2c5f5f8f841" name="Default Changelist" comment="" />
-      <created>1576486526864</created>
+      <changelist id="d14647a3-7d1c-44a4-bd9b-e1dbd4039dae" name="Default Changelist" comment="" />
+      <created>1577126845877</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576486526864</updated>
-      <workItem from="1576486531854" duration="5261000" />
-      <workItem from="1576506174031" duration="2854000" />
-      <workItem from="1576599732258" duration="856000" />
-      <workItem from="1576626355176" duration="1211000" />
-      <workItem from="1576629006405" duration="5397000" />
-      <workItem from="1576674139903" duration="4573000" />
-      <workItem from="1576856920873" duration="13288000" />
-      <workItem from="1576967606443" duration="786000" />
-      <workItem from="1576977014627" duration="11695000" />
+      <updated>1577126845877</updated>
+      <workItem from="1577126847179" duration="4330000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="565" y="214" key="#Project_Structure" timestamp="1576488177446">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="565" y="214" key="#Project_Structure/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576488177446" />
-    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576488161171">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576488161171" />
-    <state x="2681" y="244" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1576925206205">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2681" y="244" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576925206205" />
-    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1576835416768" />
-    <state x="1920" y="238" width="324" height="629" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1576687927726">
-      <screen x="67" y="27" width="3773" height="1053" />
-    </state>
-    <state x="821" y="238" width="324" height="629" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576487567234" />
-    <state x="1920" y="238" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/67.27.3773.1053@67.27.3773.1053" timestamp="1576687927726" />
-    <state x="2348" y="466" width="1054" height="145" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576877081954">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2348" y="466" width="1054" height="145" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576877081954" />
-    <state x="2633" y="399" width="494" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576877204641">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2633" y="399" width="494" height="290" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576877204641" />
-    <state x="1920" y="0" width="946" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576894935036">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1920" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576894935036" />
-    <state x="67" y="27" width="946" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576499103011" />
-    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576954128040">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576954128040" />
-    <state width="1874" height="295" key="GridCell.Tab.0.bottom" timestamp="1577048288007">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1874" height="295" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577048288007" />
-    <state width="881" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576497451003" />
-    <state width="1874" height="295" key="GridCell.Tab.0.center" timestamp="1577048288007">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1874" height="295" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577048288007" />
-    <state width="881" height="278" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576497451003" />
-    <state width="1874" height="295" key="GridCell.Tab.0.left" timestamp="1577048288007">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1874" height="295" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577048288007" />
-    <state width="881" height="278" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576497451003" />
-    <state width="1874" height="295" key="GridCell.Tab.0.right" timestamp="1577048288007">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1874" height="295" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1577048288007" />
-    <state width="881" height="278" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576497451003" />
-    <state x="1920" y="130" width="1920" height="845" key="SettingsEditor" timestamp="1576687937586">
-      <screen x="67" y="27" width="3773" height="1053" />
-    </state>
-    <state x="476" y="130" width="1024" height="845" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576487700623" />
-    <state x="1920" y="130" width="1920" height="845" key="SettingsEditor/67.27.3773.1053@67.27.3773.1053" timestamp="1576687937586" />
-    <state x="2043" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576967687576">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2043" y="363" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576967687576" />
-    <state x="186" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576511036643" />
-    <state x="186" y="381" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576599733059" />
-    <state x="186" y="381" key="com.intellij.ide.util.TipDialog/67.27.3773.1053@67.27.3773.1053" timestamp="1576686942459" />
-    <state x="1920" y="448" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576687916813">
-      <screen x="67" y="27" width="3773" height="1053" />
-    </state>
-    <state x="660" y="448" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576487563230" />
-    <state x="1920" y="448" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/67.27.3773.1053@67.27.3773.1053" timestamp="1576687916813" />
-    <state x="3071" y="175" width="469" height="590" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576938716999">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="3071" y="175" width="469" height="590" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576938716999" />
-    <state x="1178" y="198" width="469" height="590" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1576498281141" />
-    <state x="548" y="154" width="1372" height="796" key="new project wizard" timestamp="1576973884436">
-      <screen x="67" y="27" width="1853" height="1053" />
-    </state>
-    <state x="548" y="154" width="1372" height="796" key="new project wizard/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576973884436" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
