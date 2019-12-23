@@ -80,7 +80,7 @@ public class SimulationWindow extends Application {
                 window.show();
 
                 new Timeline(new KeyFrame(
-                        Duration.millis(2500),
+                        Duration.millis(500),
                         ae -> getNextFrame()))
                         .play();
 
