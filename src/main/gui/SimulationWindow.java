@@ -110,10 +110,21 @@ public class SimulationWindow extends Application {
             for (int y = 0; y < StartValues.getMapHeight(); y++)
             {
                 Button placeButton;
-                if (sim.map.listOfObjectsAt(new Vector2d(x,y)) == null || sim.map.listOfObjectsAt(new Vector2d(x,y)).size() == 0)
+                if (sim.map.listOfObjectsAt(new Vector2d(x,y)) == null || sim.map.listOfObjectsAt(new Vector2d(x,y)).size() == 0 || sim.map.listOfObjectsAt(new Vector2d(x,y)).get(0) == null)
                     placeButton = new Button("  ");
                 else
-                    placeButton = new Button(sim.map.listOfObjectsAt(new Vector2d(x, y)).get(0).toString());
+                {
+                    try
+                    {
+                        placeButton = new Button(sim.map.listOfObjectsAt(new Vector2d(x, y)).get(0).toString());
+                    }
+                    catch (NullPointerException ex)
+                    {
+                        placeButton = new Button("  ");
+                    }
+                    if (sim.map.listOfObjectsAt(new Vector2d(x, y)).size() > 1)
+                        placeButton.setStyle("-fx-background-color: #000000;");
+                }
                 if ((new Vector2d(x,y)).precedes(sim.map.getJungleHigherCorner()) && (new Vector2d(x,y)).follows(sim.map.getJungleLowerCorner()))
                     placeButton.setStyle("-fx-background-color: #00AA00;");
 

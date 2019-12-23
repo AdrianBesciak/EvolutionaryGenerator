@@ -33,6 +33,8 @@ public class Animal extends MapElement {
     }
 
     public String toString(){
+        if (this == null)
+            return " ";
         switch (this.direction)
         {
             case NORTH:
@@ -52,7 +54,7 @@ public class Animal extends MapElement {
             case NORTHWEST:
                 return "NW";
             default:
-                return null;
+                return " ";
         }
     }
 
