@@ -33,6 +33,7 @@ public class SimulationWindow extends Application {
     private Scene initialScene;
     private Scene visualizationScene;
     private Simulation sim;
+    private boolean play;
 
     public static void main(String[] args) {
         launch(args);
@@ -78,6 +79,7 @@ public class SimulationWindow extends Application {
                 visualizationScene = new Scene(addGridPane(sim));
                 window.setScene(visualizationScene);
                 window.show();
+                play = true;
 
                 new Timeline(new KeyFrame(
                         Duration.millis(500),
@@ -118,18 +120,44 @@ public class SimulationWindow extends Application {
                 placeButton.setMinSize(40,30);
                 grid.add(placeButton, y + 5, x);
             }
+        Button pauseButton = new Button("Pause Simulation");
+        Button playButton = new Button("Play Simulation");
+        pauseButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                play = false;
+                pauseButton.setVisible(false);
+                playButton.setVisible(true);
+            }
+        });
+        grid.add(pauseButton, StartValues.getMapHeight()/2 - 4, StartValues.getMapHeight() + 5, 4, 1);
+        playButton.setVisible(false);
+        playButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                play = true;
+                playButton.setVisible(false);
+                pauseButton.setVisible(true);
+                getNextFrame();
+            }
+        });
+        grid.add(playButton, StartValues.getMapHeight()/2 - 4, StartValues.getMapHeight() + 5, 4, 1);
         return grid;
     }
 
     public void getNextFrame() {
+        if (play)
+        {
             sim.nextDay();
             Scene nextVisualizationScene = new Scene(addGridPane(sim));
             window.setScene(nextVisualizationScene);
             window.show();
-        new Timeline(new KeyFrame(
-                Duration.millis(500),
-                ae -> getNextFrame()))
-                .play();
+            new Timeline(new KeyFrame(
+                    Duration.millis(500),
+                    ae -> getNextFrame()))
+                    .play();
+        }
+
     };
 
 

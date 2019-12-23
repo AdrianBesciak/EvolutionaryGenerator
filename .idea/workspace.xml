@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d14647a3-7d1c-44a4-bd9b-e1dbd4039dae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_8_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EvolutionaryGenerator/META-INF/EvolutionaryGenerator.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EvolutionaryGenerator/META-INF/EvolutionaryGenerator.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EvolutionaryGenerator/map/animal/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/gui/GUILabelAndTextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gui/GUILabelAndTextField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/gui/SimulationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/gui/SimulationView.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/gui/SimulationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gui/SimulationWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/simulation/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/simulation/SimulationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/controller/SimulationTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
